@@ -1,6 +1,5 @@
 FROM java:8
 MAINTAINER Haremza Olivier <olh@oharemza.com>
-ADD target/timeteller-0.0.1-SNAPSHOT.jar /timeteller.jar
-ENTRYPOINT java -Djava.security.egd=file:/dev/urandom -jar /timeteller.jar
-CMD []
+CMD ["java", "-Djava.security.egb=file:/dev/urandom", "-jar", "/timeteller.jar"]
 EXPOSE 8080
+ADD target/timeteller-0.0.1-SNAPSHOT.jar /timeteller.jar
