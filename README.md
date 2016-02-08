@@ -2,12 +2,12 @@
 Very basic spring-boot project to play with Docker.
 
 ## Build
+Create application jar and docker image
 ```bash
 mvn package docker:build
 ```
 
 ## Run
-To show which port is mapped to the container's 8080 port
 ```bash
 # Show which ip to query, for example 192.168.99.100
 docker-machine ip default
